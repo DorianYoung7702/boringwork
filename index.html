@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yang Zhenxiao | Agent Engineer and AI Application Engineer portfolio website" />
+  <title>Yang Zhenxiao | Agent Engineer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Go to homepage">
+        <span class="brand-mark">YZ</span>
+        <span class="brand-text">
+          <strong>Yang Zhenxiao</strong>
+          <small>Agent Engineer Portfolio</small>
+        </span>
+      </a>
+
+      <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <span class="theme-icon sun">☀</span>
+          <span class="theme-icon moon">☾</span>
+        </button>
+        <a class="btn btn-primary btn-sm" href="#contact">Let’s Connect</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Job-Seeking Personal Website</span>
+          <h1>Seeking <span>Agent Engineer</span> / <span>AI Application Engineer</span> roles focused on multi-agent systems, LLM applications, and production AI workflows.</h1>
+          <p class="hero-text">
+            I build end-to-end AI systems that combine multi-agent orchestration, RAG, tool governance, long-context handling, evaluation, and deployment into usable products.
+          </p>
+
+          <div class="tag-cluster" aria-label="Key tags">
+            <span>Multi-Agent Workflow</span>
+            <span>LLM Applications</span>
+            <span>RAG</span>
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>LangGraph</span>
+            <span>Next.js</span>
+            <span>Docker</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="resume.pdf" target="_blank" rel="noopener">Open Resume</a>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal delay-1">
+          <div class="hero-card glass-card">
+            <div class="hero-card-top">
+              <div>
+                <p class="mini-label">Primary Profile</p>
+                <h2>AI systems builder with strong product and engineering execution</h2>
+              </div>
+              <span class="status-pill">Available for 2026 roles</span>
+            </div>
+
+            <div class="metric-grid">
+              <article>
+                <strong>18</strong>
+                <span>workflow nodes in StockClaw</span>
+              </article>
+              <article>
+                <strong>55+</strong>
+                <span>automated tests and output checks</span>
+              </article>
+              <article>
+                <strong>9,000+</strong>
+                <span>stocks in monitoring cache pool</span>
+              </article>
+              <article>
+                <strong>40%</strong>
+                <span>long-context usage reduction</span>
+              </article>
+            </div>
+
+            <div class="hero-highlight">
+              <div class="highlight-dot"></div>
+              <p><strong>Core project:</strong> StockClaw — a public multi-agent financial research platform covering planning, analysis, retrieval, observability, and deployment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">About Me</span>
+          <h2>My background and focus</h2>
+          <p>I am a master's student in Data Science, expected to graduate in July 2026. My work centers on agent engineering, AI application delivery, and translating LLM capabilities into robust user-facing systems.</p>
+        </div>
+
+        <div class="about-grid">
+          <article class="glass-card reveal">
+            <h3>Short Introduction</h3>
+            <p>
+              I enjoy building AI systems that go beyond demos and can actually support long-running, high-complexity workflows. My recent work spans multi-agent orchestration, retrieval-augmented generation, tool calling, context compression, model adaptation, and full-stack deployment. I care not only about technical implementation, but also about product usability, observability, and reliable output quality. My goal is to join a team where AI systems are expected to create practical business value.
+            </p>
+          </article>
+
+          <article class="glass-card reveal delay-1">
+            <h3>Education</h3>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div>
+                <strong>Lingnan University</strong>
+                <p>MSc in Data Science · Sep 2025 – Jun 2026</p>
+                <small>Expected graduation: Jul 2026 · GPA: 3.6/4.0</small>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div>
+                <strong>South-Central Minzu University</strong>
+                <p>BSc in Artificial Intelligence · Sep 2021 – Jun 2025</p>
+                <small>GPA: 3.3/4.0 · Top 15% in major courses</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-card reveal delay-2">
+            <h3>Strengths / Focus Areas</h3>
+            <ul class="bullet-list">
+              <li>Designing multi-agent workflows for complex tasks with planning, routing, and verification.</li>
+              <li>Building agent execution layers for context management, tool governance, failure recovery, and memory.</li>
+              <li>Integrating RAG pipelines with evidence retrieval for finance-oriented long-document analysis.</li>
+              <li>Shipping complete products with backend, frontend, deployment, monitoring, and evaluation.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Skills</span>
+          <h2>What I can do</h2>
+          <p>My skills are structured around technical implementation, business-oriented thinking, and the tools I actually use in projects.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card glass-card reveal">
+            <div class="card-icon">⚙</div>
+            <h3>Technical Skills</h3>
+            <ul class="bullet-list compact">
+              <li>Python, FastAPI, SQL, Redis</li>
+              <li>LangGraph, multi-agent workflow design</li>
+              <li>RAG architecture, chunking, vector retrieval</li>
+              <li>Tool calling, structured output, SSE streaming</li>
+              <li>LoRA fine-tuning, model distillation basics</li>
+              <li>Long-term memory, context compression, workflow state management</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass-card reveal delay-1">
+            <div class="card-icon">📈</div>
+            <h3>Business Skills</h3>
+            <ul class="bullet-list compact">
+              <li>Problem framing for financial research and AI product scenarios</li>
+              <li>Metrics thinking, evaluation workflow design, and result interpretation</li>
+              <li>Evidence-based reporting and explainable project communication</li>
+              <li>Product-oriented thinking for usability, iteration, and workflow continuity</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass-card reveal delay-2">
+            <div class="card-icon">🧰</div>
+            <h3>Tools</h3>
+            <ul class="bullet-list compact">
+              <li>Next.js, TypeScript</li>
+              <li>Docker, Nginx, Linux, Git</li>
+              <li>PyTorch, Ray, Chroma</li>
+              <li>Cursor, Claude, Codex, Windsurf</li>
+              <li>GitHub Pages / website deployment</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Projects</span>
+          <h2>Portfolio</h2>
+          <p>Each project card shows the problem, data, approach, outcome, and my contribution, aligned with this course project rubric.</p>
+        </div>
+
+        <div class="project-toolbar reveal">
+          <div class="filter-group" role="tablist" aria-label="Project categories">
+            <button class="filter-chip active" data-filter="all" type="button">All</button>
+            <button class="filter-chip" data-filter="agent" type="button">Agent Systems</button>
+            <button class="filter-chip" data-filter="ml" type="button">ML / NLP</button>
+            <button class="filter-chip" data-filter="quant" type="button">Quant / Trading</button>
+          </div>
+          <p class="toolbar-note">Click <strong>Details</strong> to inspect the full project card fields.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card glass-card reveal" data-category="agent">
+            <div class="project-top">
+              <div>
+                <span class="project-type">Core Project</span>
+                <h3>StockClaw — Multi-Agent Financial Research Platform</h3>
+              </div>
+              <span class="project-time">Feb 2026 – Present</span>
+            </div>
+            <p class="project-summary">A public-facing agent system for Hong Kong and US stock research, covering stock screening, fundamentals, news, watchlist monitoring, and natural-language interaction.</p>
+            <div class="project-tags">
+              <span>LangGraph</span><span>Harness Runtime</span><span>RAG</span><span>FastAPI</span><span>Next.js</span>
+            </div>
+            <ul class="mini-points">
+              <li>18-node state machine with 7 routing paths</li>
+              <li>Tool permissions, failure recovery, memory, observability</li>
+              <li>55+ tests and 9,000+ stock monitoring pool</li>
+            </ul>
+            <div class="project-actions">
+              <button class="btn btn-secondary open-modal" type="button" data-modal="stockclaw-modal">Details</button>
+              <a class="text-link" href="https://github.com/DorianYoung7702/StockClaw" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal delay-1" data-category="quant">
+            <div class="project-top">
+              <div>
+                <span class="project-type">Internship Project</span>
+                <h3>Order Flow Monitoring & Trading Evaluation System</h3>
+              </div>
+              <span class="project-time">Feb 2026 – Present</span>
+            </div>
+            <p class="project-summary">A trading data monitoring and evaluation pipeline for exchange-level tick/depth streams, supporting order-level depth snapshot matching and execution analysis.</p>
+            <div class="project-tags">
+              <span>High-Frequency Data</span><span>Order Flow</span><span>Evaluation</span>
+            </div>
+            <ul class="mini-points">
+              <li>24/7 data acquisition and monitoring</li>
+              <li>100w+ data streams processed</li>
+              <li>Supports algorithm execution evaluation</li>
+            </ul>
+            <div class="project-actions">
+              <button class="btn btn-secondary open-modal" type="button" data-modal="orderflow-modal">Details</button>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal" data-category="ml">
+            <div class="project-top">
+              <div>
+                <span class="project-type">Individual Project</span>
+                <h3>Crypto News Sentiment Monitoring System</h3>
+              </div>
+              <span class="project-time">Dec 2025 – Jan 2026</span>
+            </div>
+            <p class="project-summary">A finance-domain text classification system for blockchain news, project announcements, exchange events, and social media text.</p>
+            <div class="project-tags">
+              <span>DeBERTa-v3</span><span>LoRA</span><span>NLP</span>
+            </div>
+            <ul class="mini-points">
+              <li>Custom dataset collection and labeling</li>
+              <li>F1 score reached 0.87</li>
+              <li>Improved domain adaptation over generic baseline</li>
+            </ul>
+            <div class="project-actions">
+              <button class="btn btn-secondary open-modal" type="button" data-modal="sentiment-modal">Details</button>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal delay-1" data-category="ml agent">
+            <div class="project-top">
+              <div>
+                <span class="project-type">Research / Training</span>
+                <h3>Financial LLM Distillation & Auto-Feedback Framework</h3>
+              </div>
+              <span class="project-time">Jan 2026 – Feb 2026</span>
+            </div>
+            <p class="project-summary">A financial-domain distillation pipeline that explored data expansion, multi-stage training, and iterative optimization for long-text reasoning tasks.</p>
+            <div class="project-tags">
+              <span>LLaMA 7B</span><span>Distillation</span><span>PyTorch/Ray</span>
+            </div>
+            <ul class="mini-points">
+              <li>Three-stage imitation → discrimination → generation workflow</li>
+              <li>52K expanded to 70K instruction data</li>
+              <li>Complex reasoning quality improved by about 18%</li>
+            </ul>
+            <div class="project-actions">
+              <button class="btn btn-secondary open-modal" type="button" data-modal="distill-modal">Details</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="resume section" id="resume">
+      <div class="container resume-grid">
+        <div class="section-head reveal">
+          <span class="eyebrow">Resume / CV</span>
+          <h2>Quick resume snapshot</h2>
+          <p>You can open or download my PDF resume. A short resume summary is also provided here for fast review.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="resume.pdf" target="_blank" rel="noopener">View Resume PDF</a>
+            <a class="btn btn-secondary" href="resume.pdf" download>Download Resume</a>
+          </div>
+        </div>
+
+        <article class="glass-card reveal delay-1">
+          <h3>Resume Highlights</h3>
+          <div class="resume-block">
+            <strong>Target Roles</strong>
+            <p>Agent Engineer · AI Application Engineer · LLM Application Engineer</p>
+          </div>
+          <div class="resume-block">
+            <strong>Experience</strong>
+            <p>Quant Development Intern at Linking Global; built systems for order flow monitoring and trading evaluation.</p>
+          </div>
+          <div class="resume-block">
+            <strong>Project Focus</strong>
+            <p>Multi-agent orchestration, agent runtime design, RAG pipelines, long-context optimization, evaluation, and deployment.</p>
+          </div>
+          <div class="resume-block">
+            <strong>Languages</strong>
+            <p>Mandarin · English (CET-6 491, IELTS 6.0)</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div class="section-head reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Let’s connect</h2>
+          <p>I am actively seeking 2026 graduate opportunities in agent engineering, AI applications, and production LLM systems.</p>
+        </div>
+
+        <article class="glass-card reveal delay-1">
+          <div class="contact-list">
+            <a class="contact-item" href="mailto:doriany7702@gmail.com">
+              <span class="contact-label">Email</span>
+              <strong>doriany7702@gmail.com</strong>
+            </a>
+            <a class="contact-item" href="https://github.com/DorianYoung7702" target="_blank" rel="noopener">
+              <span class="contact-label">GitHub</span>
+              <strong>github.com/DorianYoung7702</strong>
+            </a>
+            <div class="contact-item">
+              <span class="contact-label">Phone</span>
+              <strong>852-51742380 / 17545561587</strong>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Location</span>
+              <strong>Hong Kong / Shenzhen, Nanshan</strong>
+            </div>
+          </div>
+          <button class="btn btn-primary" id="copy-email-btn" type="button">Copy Email</button>
+          <p class="copy-feedback" id="copy-feedback" aria-live="polite"></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 Yang Zhenxiao — Personal job-seeking website for coursework submission.</p>
+      <a href="#top" class="text-link">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="modal-backdrop" hidden>
+    <div class="modal-shell" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" aria-label="Close modal">×</button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <template id="stockclaw-modal">
+    <div class="modal-section">
+      <span class="project-type">Core Project</span>
+      <h3 id="modal-title">StockClaw — Multi-Agent Financial Research Platform</h3>
+      <p class="modal-time">Feb 2026 – Present</p>
+      <div class="modal-grid">
+        <div><strong>Problem</strong><p>Financial research workflows are fragmented, difficult for non-technical users, and hard to sustain across sessions. I built a single platform that could continuously support stock screening, analysis, monitoring, and Q&amp;A interaction.</p></div>
+        <div><strong>Data</strong><p>Hong Kong and US stock data, financial reports, company profiles, news events, and prior analysis records. The system maintains a 9,000+ stock monitoring cache and uses multi-source retrieval for evidence.</p></div>
+        <div><strong>Approach</strong><p>I designed an 18-node LangGraph workflow with 7 routing paths and specialist agents such as Planner, Fundamental, News, Portfolio, and Verifier. I also implemented an Agent execution layer (Harness Runtime) for context compression, permission control, memory, recovery, and tracing, plus a RAG layer backed by chunking, embeddings, and vector retrieval.</p></div>
+        <div><strong>Outcome / Impact</strong><p>The platform supports public deployment, SSE streaming, task-state visibility, 55+ automated tests, and structured output checks. Long-context usage was reduced by about 40%, and the system can support screening, watchlist monitoring, and event-driven alerts at scale.</p></div>
+        <div><strong>My Contribution</strong><p>This was my flagship individual project. I led system design, workflow architecture, runtime capability design, RAG integration, backend and frontend development, deployment, and evaluation.</p></div>
+        <div><strong>Links</strong><p><a class="text-link" target="_blank" rel="noopener" href="https://github.com/DorianYoung7702/StockClaw">GitHub Repository ↗</a></p></div>
+      </div>
+    </div>
+  </template>
+
+  <template id="orderflow-modal">
+    <div class="modal-section">
+      <span class="project-type">Internship Project</span>
+      <h3 id="modal-title">Order Flow Monitoring & Trading Evaluation System</h3>
+      <p class="modal-time">Feb 2026 – Present</p>
+      <div class="modal-grid">
+        <div><strong>Problem</strong><p>Trading teams need accurate order-level monitoring and execution evaluation, but exchange-level tick/depth streams are high-frequency and difficult to align with downstream order performance.</p></div>
+        <div><strong>Data</strong><p>Exchange tick/depth streams and order records, linked through order_id to match market depth snapshots and evaluate single-order execution quality.</p></div>
+        <div><strong>Approach</strong><p>I helped build a pipeline for 24/7 collection, processing, and monitoring of order flow data, making depth snapshot matching and algorithm evaluation more reliable and observable.</p></div>
+        <div><strong>Outcome / Impact</strong><p>The system processed 100w+ data streams and supported million-level trading-effect evaluations, improving the visibility and accuracy of execution analysis.</p></div>
+        <div><strong>My Contribution</strong><p>As a quant development intern, I contributed to data capture, monitoring logic, and evaluation workflow implementation.</p></div>
+      </div>
+    </div>
+  </template>
+
+  <template id="sentiment-modal">
+    <div class="modal-section">
+      <span class="project-type">Individual Project</span>
+      <h3 id="modal-title">Crypto News Sentiment Monitoring System</h3>
+      <p class="modal-time">Dec 2025 – Jan 2026</p>
+      <div class="modal-grid">
+        <div><strong>Problem</strong><p>Generic sentiment models often perform poorly on crypto-specific news and event language, limiting their value for monitoring market narratives and risk signals.</p></div>
+        <div><strong>Data</strong><p>I built a custom dataset from blockchain news, project announcements, exchange events, and social media texts, then labeled and prepared the data for domain adaptation.</p></div>
+        <div><strong>Approach</strong><p>I used DeBERTa-v3-base as the backbone and applied LoRA for parameter-efficient fine-tuning, together with Focal Loss for class imbalance handling.</p></div>
+        <div><strong>Outcome / Impact</strong><p>The model achieved an F1 score of 0.87 and improved noticeably over a generic baseline, making it more suitable for domain-specific sentiment monitoring.</p></div>
+        <div><strong>My Contribution</strong><p>I completed dataset construction, training pipeline setup, experimentation, and performance evaluation.</p></div>
+      </div>
+    </div>
+  </template>
+
+  <template id="distill-modal">
+    <div class="modal-section">
+      <span class="project-type">Research / Training</span>
+      <h3 id="modal-title">Financial LLM Distillation & Auto-Feedback Framework</h3>
+      <p class="modal-time">Jan 2026 – Feb 2026</p>
+      <div class="modal-grid">
+        <div><strong>Problem</strong><p>Financial reasoning tasks require better long-text reasoning and domain adaptation, but large teacher models are costly to use directly at scale.</p></div>
+        <div><strong>Data</strong><p>The instruction set was expanded from 52K to 70K samples with hard/easy balancing and ROUGE-L-based deduplication for a cleaner training pool.</p></div>
+        <div><strong>Approach</strong><p>I reproduced a three-stage distillation pipeline — imitation, discrimination, and generation — based on a LLaMA 7B student model with distributed training support.</p></div>
+        <div><strong>Outcome / Impact</strong><p>The framework improved complex-sample reasoning quality by around 18% on financial report Q&amp;A, event attribution, and long-text research tasks, while reducing teacher API cost by about 60%.</p></div>
+        <div><strong>My Contribution</strong><p>I participated in pipeline reproduction, data expansion and filtering, and iterative training/validation work.</p></div>
+      </div>
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
