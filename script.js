@@ -11,8 +11,8 @@ const copyBtn = document.getElementById('copy-email-btn');
 const copyFeedback = document.getElementById('copy-feedback');
 const modalBackdrop = document.getElementById('modal-backdrop');
 const modalContent = document.getElementById('modal-content');
+const modalShell = document.querySelector('.modal-shell');
 const openModalButtons = document.querySelectorAll('.open-modal');
-const closeModalBtn = document.querySelector('.modal-close');
 
 const savedTheme = localStorage.getItem('site-theme');
 if (savedTheme === 'light') body.classList.add('light');
@@ -63,7 +63,7 @@ filterButtons.forEach(button => {
     const filter = button.dataset.filter;
 
     projectCards.forEach(card => {
-      const categories = card.dataset.category.split(' ');
+      const categories = (card.dataset.category || '').split(' ');
       const visible = filter === 'all' || categories.includes(filter);
       card.style.display = visible ? 'flex' : 'none';
     });
@@ -88,26 +88,37 @@ copyBtn?.addEventListener('click', async () => {
 
 function openModal(id) {
   const template = document.getElementById(id);
-  if (!template) return;
+  if (!template || !modalBackdrop || !modalContent || !modalShell) return;
+
   modalContent.innerHTML = template.innerHTML;
   modalBackdrop.hidden = false;
-  document.body.style.overflow = 'hidden';
+  modalBackdrop.setAttribute('aria-hidden', 'false');
+  body.classList.add('modal-open');
+  requestAnimationFrame(() => modalShell.focus());
 }
 
 function closeModal() {
+  if (!modalBackdrop || !modalContent) return;
   modalBackdrop.hidden = true;
+  modalBackdrop.setAttribute('aria-hidden', 'true');
   modalContent.innerHTML = '';
-  document.body.style.overflow = '';
+  body.classList.remove('modal-open');
 }
 
 openModalButtons.forEach(button => {
   button.addEventListener('click', () => openModal(button.dataset.modal));
 });
 
-closeModalBtn?.addEventListener('click', closeModal);
 modalBackdrop?.addEventListener('click', (event) => {
-  if (event.target === modalBackdrop) closeModal();
+  const clickedCloseButton = event.target instanceof Element && event.target.closest('.modal-close');
+  const clickedBackdrop = event.target === modalBackdrop;
+  if (clickedCloseButton || clickedBackdrop) closeModal();
 });
+
+modalShell?.addEventListener('click', (event) => {
+  event.stopPropagation();
+});
+
 window.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && !modalBackdrop.hidden) closeModal();
+  if (event.key === 'Escape' && modalBackdrop && !modalBackdrop.hidden) closeModal();
 });

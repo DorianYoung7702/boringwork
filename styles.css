@@ -44,6 +44,10 @@ body {
 }
 
 a { color: inherit; text-decoration: none; }
+body.modal-open {
+  overflow: hidden;
+}
+
 img { max-width: 100%; display: block; }
 button, input, textarea { font: inherit; }
 
@@ -615,7 +619,7 @@ body:not(.light) .theme-icon.sun { opacity: 1; transform: scale(1); }
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(4, 8, 20, 0.72);
+  background: rgba(4, 8, 20, 0.78);
   display: grid;
   place-items: center;
   z-index: 100;
@@ -635,6 +639,7 @@ body:not(.light) .theme-icon.sun { opacity: 1; transform: scale(1); }
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   position: relative;
+  outline: none;
 }
 
 .modal-close {
